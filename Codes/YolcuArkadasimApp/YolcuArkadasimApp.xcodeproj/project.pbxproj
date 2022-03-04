@@ -14,7 +14,7 @@
 		4A2ABEE627D210A200E3A9CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A2ABEE427D210A200E3A9CE /* Main.storyboard */; };
 		4A2ABEE827D210A300E3A9CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A2ABEE727D210A300E3A9CE /* Assets.xcassets */; };
 		4A2ABEEB27D210A300E3A9CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A2ABEE927D210A300E3A9CE /* LaunchScreen.storyboard */; };
-		4A2ABEF327D211C100E3A9CE /* GoogleService-Info (1).plist in Resources */ = {isa = PBXBuildFile; fileRef = 4A2ABEF227D211C100E3A9CE /* GoogleService-Info (1).plist */; };
+		4A2ABEF327D211C100E3A9CE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4A2ABEF227D211C100E3A9CE /* GoogleService-Info.plist */; };
 		4A2ABEF527D2305C00E3A9CE /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A2ABEF427D2305B00E3A9CE /* logo.png */; };
 /* End PBXBuildFile section */
 
@@ -27,7 +27,7 @@
 		4A2ABEE727D210A300E3A9CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4A2ABEEA27D210A300E3A9CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4A2ABEEC27D210A300E3A9CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4A2ABEF227D211C100E3A9CE /* GoogleService-Info (1).plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info (1).plist"; sourceTree = "<group>"; };
+		4A2ABEF227D211C100E3A9CE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		4A2ABEF427D2305B00E3A9CE /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		6D33BD7F63D71304A9CFA3E7 /* Pods-YolcuArkadasimApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YolcuArkadasimApp.release.xcconfig"; path = "Target Support Files/Pods-YolcuArkadasimApp/Pods-YolcuArkadasimApp.release.xcconfig"; sourceTree = "<group>"; };
 		AAF8271006991FBA1F5EE2B6 /* Pods_YolcuArkadasimApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YolcuArkadasimApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -82,7 +82,7 @@
 				4A2ABEE427D210A200E3A9CE /* Main.storyboard */,
 				4A2ABEE727D210A300E3A9CE /* Assets.xcassets */,
 				4A2ABEF427D2305B00E3A9CE /* logo.png */,
-				4A2ABEF227D211C100E3A9CE /* GoogleService-Info (1).plist */,
+				4A2ABEF227D211C100E3A9CE /* GoogleService-Info.plist */,
 				4A2ABEE927D210A300E3A9CE /* LaunchScreen.storyboard */,
 				4A2ABEEC27D210A300E3A9CE /* Info.plist */,
 			);
@@ -161,7 +161,7 @@
 				4A2ABEE827D210A300E3A9CE /* Assets.xcassets in Resources */,
 				4A2ABEF527D2305C00E3A9CE /* logo.png in Resources */,
 				4A2ABEE627D210A200E3A9CE /* Main.storyboard in Resources */,
-				4A2ABEF327D211C100E3A9CE /* GoogleService-Info (1).plist in Resources */,
+				4A2ABEF327D211C100E3A9CE /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
