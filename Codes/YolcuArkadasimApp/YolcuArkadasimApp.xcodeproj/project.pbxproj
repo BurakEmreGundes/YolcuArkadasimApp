@@ -16,6 +16,9 @@
 		4A2ABEEB27D210A300E3A9CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A2ABEE927D210A300E3A9CE /* LaunchScreen.storyboard */; };
 		4A2ABEF327D211C100E3A9CE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4A2ABEF227D211C100E3A9CE /* GoogleService-Info.plist */; };
 		4A2ABEF527D2305C00E3A9CE /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A2ABEF427D2305B00E3A9CE /* logo.png */; };
+		4A2ABEF727D261D600E3A9CE /* LastTravelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2ABEF627D261D600E3A9CE /* LastTravelViewController.swift */; };
+		4A2ABEF927D261F900E3A9CE /* UserProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2ABEF827D261F900E3A9CE /* UserProfileViewController.swift */; };
+		4A2ABEFB27D2622D00E3A9CE /* CreateTravelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2ABEFA27D2622D00E3A9CE /* CreateTravelViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +32,9 @@
 		4A2ABEEC27D210A300E3A9CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4A2ABEF227D211C100E3A9CE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		4A2ABEF427D2305B00E3A9CE /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		4A2ABEF627D261D600E3A9CE /* LastTravelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastTravelViewController.swift; sourceTree = "<group>"; };
+		4A2ABEF827D261F900E3A9CE /* UserProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileViewController.swift; sourceTree = "<group>"; };
+		4A2ABEFA27D2622D00E3A9CE /* CreateTravelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTravelViewController.swift; sourceTree = "<group>"; };
 		6D33BD7F63D71304A9CFA3E7 /* Pods-YolcuArkadasimApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YolcuArkadasimApp.release.xcconfig"; path = "Target Support Files/Pods-YolcuArkadasimApp/Pods-YolcuArkadasimApp.release.xcconfig"; sourceTree = "<group>"; };
 		AAF8271006991FBA1F5EE2B6 /* Pods_YolcuArkadasimApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YolcuArkadasimApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEDD805A18FC4DF79063A770 /* Pods-YolcuArkadasimApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YolcuArkadasimApp.debug.xcconfig"; path = "Target Support Files/Pods-YolcuArkadasimApp/Pods-YolcuArkadasimApp.debug.xcconfig"; sourceTree = "<group>"; };
@@ -85,6 +91,9 @@
 				4A2ABEF227D211C100E3A9CE /* GoogleService-Info.plist */,
 				4A2ABEE927D210A300E3A9CE /* LaunchScreen.storyboard */,
 				4A2ABEEC27D210A300E3A9CE /* Info.plist */,
+				4A2ABEF627D261D600E3A9CE /* LastTravelViewController.swift */,
+				4A2ABEF827D261F900E3A9CE /* UserProfileViewController.swift */,
+				4A2ABEFA27D2622D00E3A9CE /* CreateTravelViewController.swift */,
 			);
 			path = YolcuArkadasimApp;
 			sourceTree = "<group>";
@@ -215,7 +224,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				4A2ABEE327D210A200E3A9CE /* ViewController.swift in Sources */,
+				4A2ABEF927D261F900E3A9CE /* UserProfileViewController.swift in Sources */,
+				4A2ABEFB27D2622D00E3A9CE /* CreateTravelViewController.swift in Sources */,
 				4A2ABEDF27D210A200E3A9CE /* AppDelegate.swift in Sources */,
+				4A2ABEF727D261D600E3A9CE /* LastTravelViewController.swift in Sources */,
 				4A2ABEE127D210A200E3A9CE /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

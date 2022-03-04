@@ -94,10 +94,10 @@
             </objects>
             <point key="canvasLocation" x="18.840579710144929" y="65.625"/>
         </scene>
-        <!--View Controller-->
+        <!--Create Travel View Controller-->
         <scene sceneID="J58-W9-Dan">
             <objects>
-                <viewController id="gIM-ZD-2go" sceneMemberID="viewController">
+                <viewController id="gIM-ZD-2go" customClass="CreateTravelViewController" customModule="YolcuArkadasimApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Zdi-U4-Qzx">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -110,42 +110,88 @@
             </objects>
             <point key="canvasLocation" x="2025" y="427"/>
         </scene>
-        <!--View Controller-->
+        <!--User Profile View Controller-->
         <scene sceneID="SnX-e8-1dp">
             <objects>
-                <viewController id="D3S-4r-LLv" sceneMemberID="viewController">
+                <viewController id="D3S-4r-LLv" customClass="UserProfileViewController" customModule="YolcuArkadasimApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aDr-z7-gew">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xli-JV-qx6">
+                                <rect key="frame" x="128" y="385" width="158" height="126"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Logout"/>
+                                <connections>
+                                    <action selector="logoutButtonClicked:" destination="D3S-4r-LLv" eventType="touchUpInside" id="6dX-RX-x0K"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="z0D-7r-eOL"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="person" catalog="system" id="7Rt-Bb-AHu"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="toViewControllerAfterLogout" modalPresentationStyle="fullScreen" id="W91-mH-1Ve"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PcO-6x-2cJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2026" y="1093"/>
+            <point key="canvasLocation" x="2024.6376811594205" y="1092.8571428571429"/>
         </scene>
-        <!--View Controller-->
+        <!--Last Travel View Controller-->
         <scene sceneID="5UI-WE-KM0">
             <objects>
-                <viewController id="RQ1-gy-H3d" sceneMemberID="viewController">
+                <viewController id="RQ1-gy-H3d" customClass="LastTravelViewController" customModule="YolcuArkadasimApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="JoJ-xK-7hP">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K9K-Kr-OBL" colorLabel="IBBuiltInLabel-Red">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <items>
+                                    <navigationItem title="Last Travels" id="vFB-4z-F7V"/>
+                                </items>
+                            </navigationBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="lhj-ir-Afa">
+                                <rect key="frame" x="0.0" y="88" width="414" height="686"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="130" id="ns9-xl-fwV">
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="130"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ns9-xl-fwV" id="aYP-0d-l5X">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="130"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="7So-cH-fgW"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="K9K-Kr-OBL" firstAttribute="leading" secondItem="JoJ-xK-7hP" secondAttribute="leading" id="Gld-LI-FD1"/>
+                            <constraint firstAttribute="trailing" secondItem="K9K-Kr-OBL" secondAttribute="trailing" id="ITQ-Qo-VJ7"/>
+                            <constraint firstItem="K9K-Kr-OBL" firstAttribute="leading" secondItem="lhj-ir-Afa" secondAttribute="leading" id="OcE-5F-uUw"/>
+                            <constraint firstItem="K9K-Kr-OBL" firstAttribute="trailing" secondItem="lhj-ir-Afa" secondAttribute="trailing" id="RCz-1m-5zz"/>
+                            <constraint firstItem="7So-cH-fgW" firstAttribute="bottom" secondItem="lhj-ir-Afa" secondAttribute="bottom" constant="39" id="Vvy-5a-ltl"/>
+                            <constraint firstItem="lhj-ir-Afa" firstAttribute="top" secondItem="K9K-Kr-OBL" secondAttribute="bottom" id="j68-YV-nnX"/>
+                            <constraint firstItem="K9K-Kr-OBL" firstAttribute="top" secondItem="7So-cH-fgW" secondAttribute="top" id="kg1-fd-gMN"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="homekit" catalog="system" id="24l-8i-BcH"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Eeb-0c-mwS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2025" y="-244"/>
+            <point key="canvasLocation" x="2024.6376811594205" y="-244.41964285714283"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="tin-FO-bcX">
             <objects>
-                <tabBarController id="aqx-RQ-MXF" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="tabBar" id="aqx-RQ-MXF" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="oVJ-hs-MDn"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="yhw-zr-HP5">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
