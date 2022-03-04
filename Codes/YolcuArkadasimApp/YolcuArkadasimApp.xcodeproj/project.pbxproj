@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2CBA9B537930C9E453B9C46C /* Pods_YolcuArkadasimApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAF8271006991FBA1F5EE2B6 /* Pods_YolcuArkadasimApp.framework */; };
 		4A2ABEDF27D210A200E3A9CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2ABEDE27D210A200E3A9CE /* AppDelegate.swift */; };
 		4A2ABEE127D210A200E3A9CE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2ABEE027D210A200E3A9CE /* SceneDelegate.swift */; };
 		4A2ABEE327D210A200E3A9CE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2ABEE227D210A200E3A9CE /* ViewController.swift */; };
 		4A2ABEE627D210A200E3A9CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A2ABEE427D210A200E3A9CE /* Main.storyboard */; };
 		4A2ABEE827D210A300E3A9CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A2ABEE727D210A300E3A9CE /* Assets.xcassets */; };
 		4A2ABEEB27D210A300E3A9CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A2ABEE927D210A300E3A9CE /* LaunchScreen.storyboard */; };
+		4A2ABEF327D211C100E3A9CE /* GoogleService-Info (1).plist in Resources */ = {isa = PBXBuildFile; fileRef = 4A2ABEF227D211C100E3A9CE /* GoogleService-Info (1).plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,10 @@
 		4A2ABEE727D210A300E3A9CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4A2ABEEA27D210A300E3A9CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4A2ABEEC27D210A300E3A9CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4A2ABEF227D211C100E3A9CE /* GoogleService-Info (1).plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info (1).plist"; sourceTree = "<group>"; };
+		6D33BD7F63D71304A9CFA3E7 /* Pods-YolcuArkadasimApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YolcuArkadasimApp.release.xcconfig"; path = "Target Support Files/Pods-YolcuArkadasimApp/Pods-YolcuArkadasimApp.release.xcconfig"; sourceTree = "<group>"; };
+		AAF8271006991FBA1F5EE2B6 /* Pods_YolcuArkadasimApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YolcuArkadasimApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EEDD805A18FC4DF79063A770 /* Pods-YolcuArkadasimApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YolcuArkadasimApp.debug.xcconfig"; path = "Target Support Files/Pods-YolcuArkadasimApp/Pods-YolcuArkadasimApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CBA9B537930C9E453B9C46C /* Pods_YolcuArkadasimApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1544AFDBF775DEF0EB749C51 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EEDD805A18FC4DF79063A770 /* Pods-YolcuArkadasimApp.debug.xcconfig */,
+				6D33BD7F63D71304A9CFA3E7 /* Pods-YolcuArkadasimApp.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		4A2ABED227D210A200E3A9CE = {
 			isa = PBXGroup;
 			children = (
 				4A2ABEDD27D210A200E3A9CE /* YolcuArkadasimApp */,
 				4A2ABEDC27D210A200E3A9CE /* Products */,
+				1544AFDBF775DEF0EB749C51 /* Pods */,
+				6B69A773BE160C7007D0783A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -61,10 +80,19 @@
 				4A2ABEE227D210A200E3A9CE /* ViewController.swift */,
 				4A2ABEE427D210A200E3A9CE /* Main.storyboard */,
 				4A2ABEE727D210A300E3A9CE /* Assets.xcassets */,
+				4A2ABEF227D211C100E3A9CE /* GoogleService-Info (1).plist */,
 				4A2ABEE927D210A300E3A9CE /* LaunchScreen.storyboard */,
 				4A2ABEEC27D210A300E3A9CE /* Info.plist */,
 			);
 			path = YolcuArkadasimApp;
+			sourceTree = "<group>";
+		};
+		6B69A773BE160C7007D0783A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AAF8271006991FBA1F5EE2B6 /* Pods_YolcuArkadasimApp.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +102,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4A2ABEEF27D210A300E3A9CE /* Build configuration list for PBXNativeTarget "YolcuArkadasimApp" */;
 			buildPhases = (
+				09C6411336D4A5AE3FEC5E56 /* [CP] Check Pods Manifest.lock */,
 				4A2ABED727D210A200E3A9CE /* Sources */,
 				4A2ABED827D210A200E3A9CE /* Frameworks */,
 				4A2ABED927D210A200E3A9CE /* Resources */,
+				6E5FDD1CB846D9D5048CB7C8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -128,10 +158,53 @@
 				4A2ABEEB27D210A300E3A9CE /* LaunchScreen.storyboard in Resources */,
 				4A2ABEE827D210A300E3A9CE /* Assets.xcassets in Resources */,
 				4A2ABEE627D210A200E3A9CE /* Main.storyboard in Resources */,
+				4A2ABEF327D211C100E3A9CE /* GoogleService-Info (1).plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		09C6411336D4A5AE3FEC5E56 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YolcuArkadasimApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6E5FDD1CB846D9D5048CB7C8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YolcuArkadasimApp/Pods-YolcuArkadasimApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YolcuArkadasimApp/Pods-YolcuArkadasimApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-YolcuArkadasimApp/Pods-YolcuArkadasimApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4A2ABED727D210A200E3A9CE /* Sources */ = {
@@ -284,6 +357,7 @@
 		};
 		4A2ABEF027D210A300E3A9CE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EEDD805A18FC4DF79063A770 /* Pods-YolcuArkadasimApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -312,6 +386,7 @@
 		};
 		4A2ABEF127D210A300E3A9CE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D33BD7F63D71304A9CFA3E7 /* Pods-YolcuArkadasimApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
