@@ -15,8 +15,68 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="fC7-Tj-swb">
+                                <rect key="frame" x="76" y="88" width="262" height="262"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="262" id="P0b-Uy-bqf"/>
+                                    <constraint firstAttribute="height" constant="262" id="tFQ-ip-dc1"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rzZ-Wh-tFg">
+                                <rect key="frame" x="66" y="376" width="283" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="TYD-da-6oe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sWd-ly-CH7">
+                                <rect key="frame" x="66" y="457" width="283" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="ELR-gg-YMF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wLP-3o-gmS">
+                                <rect key="frame" x="224" y="551" width="114" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Sign In">
+                                    <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5VG-Dd-2rT">
+                                <rect key="frame" x="76" y="551" width="114" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="114" id="rhL-b9-3J9"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Sign Out">
+                                    <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                </buttonConfiguration>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="fC7-Tj-swb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2xy-8E-5tH"/>
+                            <constraint firstItem="fC7-Tj-swb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="76" id="4t6-HM-uJZ"/>
+                            <constraint firstItem="rzZ-Wh-tFg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="66" id="6lf-kR-qwY"/>
+                            <constraint firstItem="rzZ-Wh-tFg" firstAttribute="top" secondItem="fC7-Tj-swb" secondAttribute="bottom" constant="26" id="F4T-ll-f19"/>
+                            <constraint firstItem="wLP-3o-gmS" firstAttribute="leading" secondItem="5VG-Dd-2rT" secondAttribute="trailing" constant="34" id="I4C-JD-B5f"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="5VG-Dd-2rT" secondAttribute="bottom" constant="276" id="ZDt-v4-kEU"/>
+                            <constraint firstItem="fC7-Tj-swb" firstAttribute="centerX" secondItem="rzZ-Wh-tFg" secondAttribute="centerX" id="b9K-Pb-PAi"/>
+                            <constraint firstItem="wLP-3o-gmS" firstAttribute="baseline" secondItem="5VG-Dd-2rT" secondAttribute="firstBaseline" id="hz4-3w-7yh"/>
+                            <constraint firstItem="fC7-Tj-swb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="44" id="imu-ow-zRA"/>
+                            <constraint firstItem="rzZ-Wh-tFg" firstAttribute="leading" secondItem="sWd-ly-CH7" secondAttribute="leading" id="pXe-fp-VxT"/>
+                            <constraint firstItem="sWd-ly-CH7" firstAttribute="top" secondItem="rzZ-Wh-tFg" secondAttribute="bottom" constant="47" id="pm9-cn-1JC"/>
+                            <constraint firstItem="rzZ-Wh-tFg" firstAttribute="trailing" secondItem="sWd-ly-CH7" secondAttribute="trailing" id="qsT-IF-z1x"/>
+                            <constraint firstItem="fC7-Tj-swb" firstAttribute="leading" secondItem="5VG-Dd-2rT" secondAttribute="leading" id="vVX-V7-4gi"/>
+                            <constraint firstItem="5VG-Dd-2rT" firstAttribute="baseline" secondItem="wLP-3o-gmS" secondAttribute="baseline" id="wxP-wL-tL2"/>
+                            <constraint firstItem="5VG-Dd-2rT" firstAttribute="top" secondItem="sWd-ly-CH7" secondAttribute="bottom" constant="60" id="xV6-cw-alz"/>
+                            <constraint firstItem="fC7-Tj-swb" firstAttribute="trailing" secondItem="wLP-3o-gmS" secondAttribute="trailing" id="zDU-24-d8y"/>
+                        </constraints>
                     </view>
                     <connections>
                         <segue destination="aqx-RQ-MXF" kind="presentation" identifier="toTabBarVC" modalPresentationStyle="fullScreen" id="bGD-M9-4e0"/>
@@ -24,9 +84,9 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="20" y="66"/>
+            <point key="canvasLocation" x="18.840579710144929" y="65.625"/>
         </scene>
-        <!--Item 2-->
+        <!--View Controller-->
         <scene sceneID="J58-W9-Dan">
             <objects>
                 <viewController id="gIM-ZD-2go" sceneMemberID="viewController">
@@ -36,13 +96,13 @@
                         <viewLayoutGuide key="safeArea" id="nzd-eX-2h4"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="IJy-Is-Cyk"/>
+                    <tabBarItem key="tabBarItem" title="" image="map" catalog="system" landscapeImage="map" id="IJy-Is-Cyk"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jYI-Xx-2mh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2025" y="427"/>
         </scene>
-        <!--Item-->
+        <!--View Controller-->
         <scene sceneID="SnX-e8-1dp">
             <objects>
                 <viewController id="D3S-4r-LLv" sceneMemberID="viewController">
@@ -52,13 +112,13 @@
                         <viewLayoutGuide key="safeArea" id="z0D-7r-eOL"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="7Rt-Bb-AHu"/>
+                    <tabBarItem key="tabBarItem" title="" image="person" catalog="system" id="7Rt-Bb-AHu"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PcO-6x-2cJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2026" y="1093"/>
         </scene>
-        <!--Item 1-->
+        <!--View Controller-->
         <scene sceneID="5UI-WE-KM0">
             <objects>
                 <viewController id="RQ1-gy-H3d" sceneMemberID="viewController">
@@ -68,7 +128,7 @@
                         <viewLayoutGuide key="safeArea" id="7So-cH-fgW"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="24l-8i-BcH"/>
+                    <tabBarItem key="tabBarItem" title="" image="homekit" catalog="system" id="24l-8i-BcH"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Eeb-0c-mwS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -96,6 +156,10 @@
         </scene>
     </scenes>
     <resources>
+        <image name="homekit" catalog="system" width="128" height="106"/>
+        <image name="logo.png" width="375" height="375"/>
+        <image name="map" catalog="system" width="128" height="110"/>
+        <image name="person" catalog="system" width="128" height="117"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
