@@ -392,7 +392,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="yRF-Qw-xi4">
-                                <rect key="frame" x="0.0" y="457" width="414" height="377"/>
+                                <rect key="frame" x="0.0" y="457" width="414" height="331"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </mapView>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Başlık" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Rj4-yq-pCO">
@@ -424,6 +424,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Ekle"/>
+                                <connections>
+                                    <action selector="addButtonClicked:" destination="arb-H2-k3T" eventType="touchUpInside" id="kIu-Ao-fWd"/>
+                                </connections>
                             </button>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bze-XR-Ycw" colorLabel="IBBuiltInLabel-Red">
                                 <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -438,10 +441,17 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="BuH-0K-atY"/>
+                    <connections>
+                        <outlet property="carNameTextField" destination="FLA-YT-sso" id="v2Q-Ky-cws"/>
+                        <outlet property="fromTextField" destination="upF-bs-LgT" id="xro-BN-Rst"/>
+                        <outlet property="mapView" destination="yRF-Qw-xi4" id="U8X-fK-igf"/>
+                        <outlet property="titleTextField" destination="Rj4-yq-pCO" id="Nxh-4K-Pyh"/>
+                        <outlet property="toTextField" destination="Hew-8l-JB7" id="f4H-bC-KR5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MNK-cS-KoH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3839.130434782609" y="1092.8571428571429"/>
+            <point key="canvasLocation" x="3985.507246376812" y="1162.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="wEm-uP-wxS">
