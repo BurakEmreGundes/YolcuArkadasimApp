@@ -17,6 +17,9 @@ class AddNewTravelViewController: UIViewController,MKMapViewDelegate,CLLocationM
     @IBOutlet weak var fromTextField: UITextField!
     @IBOutlet weak var toTextField: UITextField!
     
+    var chosenLatitude: Double!
+    var chosenLongitude: Double!
+    
     var locationManager=CLLocationManager()
     
     @IBOutlet weak var mapView: MKMapView!
@@ -49,11 +52,12 @@ class AddNewTravelViewController: UIViewController,MKMapViewDelegate,CLLocationM
         if mapViewRecognizer.state == .began{
             let touchedPoint=mapViewRecognizer.location(in: self.mapView)
             let touchedCoordinates = self.mapView.convert(touchedPoint,toCoordinateFrom:self.mapView)
-          
+            chosenLatitude=touchedCoordinates.latitude
+            chosenLongitude=touchedCoordinates.longitude
             let annotation = MKPointAnnotation()
             annotation.coordinate=touchedCoordinates
             
-            if titleTextField.text != "" {
+            if titleTextField.text != "" && carNameTextField.text != "" && fromTextField.text != "" && toTextField.text != "" {
                 annotation.title=titleTextField.text
                 self.mapView.addAnnotation(annotation)
             }
@@ -64,17 +68,54 @@ class AddNewTravelViewController: UIViewController,MKMapViewDelegate,CLLocationM
         view.endEditing(true)
     }
     
-    @IBAction func addButtonClicked(_ sender: Any) {
+    func makeAlert(titleInput:String,messageInput:String){
+        let alert=UIAlertController(title: titleInput, message: messageInput, preferredStyle: UIAlertController.Style.alert)
+        let okButton = UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil)
+        alert.addAction(okButton)
+        self.present(alert, animated: true, completion: nil)
         
+    }
+    
+    @IBAction func addButtonClicked(_ sender: Any) {
+        if titleTextField.text == "" || carNameTextField.text=="" || toTextField.text == "" || fromTextField.text == "" {
+            makeAlert(titleInput: "Error", messageInput: "Lütfen alanların hepsini doldurunuz.")
+        }else if chosenLatitude == nil || chosenLongitude == nil{
+            makeAlert(titleInput: "Error", messageInput: "Lütfen haritadan yolculuğa başlayacağınız alanı işaretleyiniz")
+        }else{
+            let fireStoreDatabase = Firestore.firestore()
+            
+            var fireStoreReferance: DocumentReference?=nil
+            
+            let fireStorePost=["travelTitle":titleTextField.text!,"postedBy":Auth.auth().currentUser!.email!,"travelCar":carNameTextField.text!,"travelTo":toTextField.text!,"travelFrom":fromTextField.text!, "date":FieldValue.serverTimestamp(),"likes":0] as [String : Any]
+            
+            fireStoreReferance=fireStoreDatabase.collection("Travels").addDocument(data: fireStorePost,completion: { (error) in
+                if error != nil {
+                    self.makeAlert(titleInput: "Error", messageInput: error?.localizedDescription ?? "Error")
+                }else{
+                    self.carNameTextField.text=""
+                    self.fromTextField.text=""
+                    self.toTextField.text=""
+                    self.titleTextField.text=""
+                    self.chosenLatitude=nil
+                    self.chosenLongitude=nil
+                    self.tabBarController?.selectedIndex=0
+                }
+            })
+            
+            
+        }
     }
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
             // Enlem Boylam veriyoruz
+       
             let location = CLLocationCoordinate2D(latitude:locations[0].coordinate.latitude,longitude: locations[0].coordinate.longitude)
             // Zomlanacak olan spani oluşturuyoruz
             let span = MKCoordinateSpan(latitudeDelta: 0.05, longitudeDelta: 0.05)
             let region = MKCoordinateRegion(center: location, span: span)
             mapView.setRegion(region, animated: true)
+        
+    
     }
     
 
