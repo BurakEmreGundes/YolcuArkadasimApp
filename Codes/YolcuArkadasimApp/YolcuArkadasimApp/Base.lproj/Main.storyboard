@@ -84,6 +84,7 @@
                             <constraint firstItem="fC7-Tj-swb" firstAttribute="trailing" secondItem="wLP-3o-gmS" secondAttribute="trailing" id="zDU-24-d8y"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="NNx-Dr-wOj"/>
                     <connections>
                         <outlet property="emailTextField" destination="rzZ-Wh-tFg" id="aJD-Ud-wAO"/>
                         <outlet property="passwordTextField" destination="sWd-ly-CH7" id="3XZ-lb-ZV7"/>
@@ -110,6 +111,37 @@
             </objects>
             <point key="canvasLocation" x="2025" y="427"/>
         </scene>
+        <!--Logout View Controller-->
+        <scene sceneID="lnV-dr-l4E">
+            <objects>
+                <viewController id="trR-hZ-5tO" customClass="LogoutViewController" customModule="YolcuArkadasimApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="piN-n4-GT8">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T5T-DI-aen">
+                                <rect key="frame" x="136" y="374" width="142" height="108"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Logout"/>
+                                <connections>
+                                    <action selector="logoutButtonClicked:" destination="zbk-pQ-mLe" eventType="touchUpInside" id="O0U-IJ-e6C"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="tgv-t9-ig8"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="XdO-9y-cbW"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="toLogout" modalPresentationStyle="fullScreen" id="7y2-S7-Bgv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="n0O-Qt-Plm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="zbk-pQ-mLe" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="2950.7246376811595" y="427.90178571428572"/>
+        </scene>
         <!--User Profile View Controller-->
         <scene sceneID="SnX-e8-1dp">
             <objects>
@@ -118,27 +150,104 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xli-JV-qx6">
-                                <rect key="frame" x="128" y="385" width="158" height="126"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Logout"/>
-                                <connections>
-                                    <action selector="logoutButtonClicked:" destination="D3S-4r-LLv" eventType="touchUpInside" id="6dX-RX-x0K"/>
-                                </connections>
-                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="qqa-cX-1Sx">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="settingsCell" rowHeight="256" id="AwS-ki-lMA" customClass="SettingsTableViewCell" customModule="YolcuArkadasimApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="256"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="AwS-ki-lMA" id="LNG-Id-fkL">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="256"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sh3-0T-Mi8">
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="55"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="55" id="jX0-h9-f2b"/>
+                                                        <constraint firstAttribute="height" constant="55" id="lT7-x6-MY5"/>
+                                                    </constraints>
+                                                    <state key="normal" title="Button"/>
+                                                    <buttonConfiguration key="configuration" style="gray" title="Seyahat Ekle"/>
+                                                    <connections>
+                                                        <action selector="addTravelButtonClicked:" destination="AwS-ki-lMA" eventType="touchUpInside" id="K4Q-cd-8RT"/>
+                                                        <segue destination="arb-H2-k3T" kind="show" id="Smb-PG-Nvf"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gUO-OL-2sc">
+                                                    <rect key="frame" x="0.0" y="63" width="414" height="55"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="55" id="uRA-NC-r31"/>
+                                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="55" id="yUh-GE-mp8"/>
+                                                    </constraints>
+                                                    <state key="normal" title="Button"/>
+                                                    <buttonConfiguration key="configuration" style="gray" title="Seyahatlerim"/>
+                                                    <connections>
+                                                        <action selector="listSelfTravelsButtonClicked:" destination="AwS-ki-lMA" eventType="touchUpInside" id="4IE-Rc-iZm"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0m5-ej-vzi">
+                                                    <rect key="frame" x="0.0" y="126" width="414" height="55"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="55" id="7tj-ip-7As"/>
+                                                        <constraint firstAttribute="height" constant="55" id="njt-fa-Ws4"/>
+                                                    </constraints>
+                                                    <state key="normal" title="Button"/>
+                                                    <buttonConfiguration key="configuration" style="gray" title="Profilim"/>
+                                                    <connections>
+                                                        <action selector="profileButtonClicked:" destination="AwS-ki-lMA" eventType="touchUpInside" id="bHO-hD-JB4"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QeO-Q5-Xwe">
+                                                    <rect key="frame" x="0.0" y="189" width="414" height="55"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="55" id="YuP-BE-y2S"/>
+                                                    </constraints>
+                                                    <state key="normal" title="Button"/>
+                                                    <buttonConfiguration key="configuration" style="gray" title="Çıkış Yap"/>
+                                                    <connections>
+                                                        <action selector="logoutButtonClicked:" destination="AwS-ki-lMA" eventType="touchUpInside" id="Wf2-Qu-iFr"/>
+                                                        <segue destination="trR-hZ-5tO" kind="show" id="Pz8-wh-3AL"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="sh3-0T-Mi8" firstAttribute="leading" secondItem="gUO-OL-2sc" secondAttribute="leading" id="63i-8l-JFm"/>
+                                                <constraint firstItem="sh3-0T-Mi8" firstAttribute="top" secondItem="LNG-Id-fkL" secondAttribute="topMargin" constant="-11" id="Byd-VF-GFQ"/>
+                                                <constraint firstItem="sh3-0T-Mi8" firstAttribute="leading" secondItem="LNG-Id-fkL" secondAttribute="leadingMargin" constant="-20" id="Ivq-NO-bne"/>
+                                                <constraint firstItem="gUO-OL-2sc" firstAttribute="trailing" secondItem="0m5-ej-vzi" secondAttribute="trailing" id="VQY-RN-TBk"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="QeO-Q5-Xwe" secondAttribute="bottom" constant="1" id="YhW-Pn-Ra3"/>
+                                                <constraint firstItem="sh3-0T-Mi8" firstAttribute="trailing" secondItem="gUO-OL-2sc" secondAttribute="trailing" id="asz-zh-x65"/>
+                                                <constraint firstItem="0m5-ej-vzi" firstAttribute="top" secondItem="gUO-OL-2sc" secondAttribute="bottom" constant="8" id="dbT-bf-eKK"/>
+                                                <constraint firstItem="gUO-OL-2sc" firstAttribute="top" secondItem="sh3-0T-Mi8" secondAttribute="bottom" constant="8" id="gtO-vv-h1H"/>
+                                                <constraint firstItem="0m5-ej-vzi" firstAttribute="leading" secondItem="QeO-Q5-Xwe" secondAttribute="leading" id="iIu-RH-cUc"/>
+                                                <constraint firstItem="gUO-OL-2sc" firstAttribute="leading" secondItem="0m5-ej-vzi" secondAttribute="leading" id="is4-jS-qtC"/>
+                                                <constraint firstItem="sh3-0T-Mi8" firstAttribute="centerX" secondItem="LNG-Id-fkL" secondAttribute="centerX" id="pu4-to-RhH"/>
+                                                <constraint firstItem="QeO-Q5-Xwe" firstAttribute="top" secondItem="0m5-ej-vzi" secondAttribute="bottom" constant="8" id="tZb-bD-NTX"/>
+                                                <constraint firstItem="0m5-ej-vzi" firstAttribute="trailing" secondItem="QeO-Q5-Xwe" secondAttribute="trailing" id="vkh-mM-DaX"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="z0D-7r-eOL"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="qqa-cX-1Sx" firstAttribute="centerX" secondItem="aDr-z7-gew" secondAttribute="centerX" id="EK3-4y-NXi"/>
+                            <constraint firstItem="qqa-cX-1Sx" firstAttribute="bottom" secondItem="z0D-7r-eOL" secondAttribute="bottom" id="Yoo-pW-tlh"/>
+                            <constraint firstItem="qqa-cX-1Sx" firstAttribute="top" secondItem="z0D-7r-eOL" secondAttribute="top" id="sIa-mY-dyp"/>
+                            <constraint firstItem="qqa-cX-1Sx" firstAttribute="leading" secondItem="z0D-7r-eOL" secondAttribute="leading" id="ut4-Ol-QTF"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="person" catalog="system" id="7Rt-Bb-AHu"/>
+                    <navigationItem key="navigationItem" id="hsh-cc-991"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="toViewControllerAfterLogout" modalPresentationStyle="fullScreen" id="W91-mH-1Ve"/>
+                        <outlet property="tableView" destination="qqa-cX-1Sx" id="oQ8-qd-wf3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PcO-6x-2cJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2024.6376811594205" y="1092.8571428571429"/>
+            <point key="canvasLocation" x="2975" y="1163"/>
         </scene>
         <!--Last Travel View Controller-->
         <scene sceneID="5UI-WE-KM0">
@@ -267,12 +376,91 @@
                     <connections>
                         <segue destination="RQ1-gy-H3d" kind="relationship" relationship="viewControllers" id="coE-xi-g5o"/>
                         <segue destination="gIM-ZD-2go" kind="relationship" relationship="viewControllers" id="H91-Og-zOr"/>
-                        <segue destination="D3S-4r-LLv" kind="relationship" relationship="viewControllers" id="Y8f-SO-CtF"/>
+                        <segue destination="Cb6-fL-ky1" kind="relationship" relationship="viewControllers" id="Y8f-SO-CtF"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zB5-rs-nzg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1000" y="66"/>
+        </scene>
+        <!--Add New Travel View Controller-->
+        <scene sceneID="iGl-yk-uv4">
+            <objects>
+                <viewController id="arb-H2-k3T" customClass="AddNewTravelViewController" customModule="YolcuArkadasimApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DIN-RM-egF">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="yRF-Qw-xi4">
+                                <rect key="frame" x="0.0" y="457" width="414" height="377"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </mapView>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Başlık" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Rj4-yq-pCO">
+                                <rect key="frame" x="58" y="142" width="299" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Araç" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FLA-YT-sso">
+                                <rect key="frame" x="58" y="200" width="299" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nereden" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="upF-bs-LgT">
+                                <rect key="frame" x="58" y="260" width="299" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nereye" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Hew-8l-JB7">
+                                <rect key="frame" x="58" y="317" width="299" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Kf-ak-F3M">
+                                <rect key="frame" x="137" y="381" width="141" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Ekle"/>
+                            </button>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bze-XR-Ycw" colorLabel="IBBuiltInLabel-Red">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <items>
+                                    <navigationItem title="New Travel" id="0OK-hE-Vri"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="f4z-So-pTy"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="BuH-0K-atY"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MNK-cS-KoH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3839.130434782609" y="1092.8571428571429"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="wEm-uP-wxS">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Cb6-fL-ky1" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="person" catalog="system" id="7Rt-Bb-AHu"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="yeE-A6-7kR">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="D3S-4r-LLv" kind="relationship" relationship="rootViewController" id="Rw8-Cq-FxY"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="O0F-Ky-FV4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2024.6376811594205" y="1092.8571428571429"/>
         </scene>
     </scenes>
     <resources>

@@ -20,6 +20,9 @@
 		4A2ABEF727D261D600E3A9CE /* LastTravelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2ABEF627D261D600E3A9CE /* LastTravelViewController.swift */; };
 		4A2ABEF927D261F900E3A9CE /* UserProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2ABEF827D261F900E3A9CE /* UserProfileViewController.swift */; };
 		4A2ABEFB27D2622D00E3A9CE /* CreateTravelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2ABEFA27D2622D00E3A9CE /* CreateTravelViewController.swift */; };
+		4A44F8CD27D7925000A73D1E /* SettingsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A44F8CC27D7925000A73D1E /* SettingsTableViewCell.swift */; };
+		4A44F8CF27D79C0100A73D1E /* AddNewTravelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A44F8CE27D79C0000A73D1E /* AddNewTravelViewController.swift */; };
+		4A44F8D127D7A47A00A73D1E /* LogoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A44F8D027D7A47A00A73D1E /* LogoutViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +40,9 @@
 		4A2ABEF627D261D600E3A9CE /* LastTravelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastTravelViewController.swift; sourceTree = "<group>"; };
 		4A2ABEF827D261F900E3A9CE /* UserProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileViewController.swift; sourceTree = "<group>"; };
 		4A2ABEFA27D2622D00E3A9CE /* CreateTravelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTravelViewController.swift; sourceTree = "<group>"; };
+		4A44F8CC27D7925000A73D1E /* SettingsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewCell.swift; sourceTree = "<group>"; };
+		4A44F8CE27D79C0000A73D1E /* AddNewTravelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewTravelViewController.swift; sourceTree = "<group>"; };
+		4A44F8D027D7A47A00A73D1E /* LogoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutViewController.swift; sourceTree = "<group>"; };
 		6D33BD7F63D71304A9CFA3E7 /* Pods-YolcuArkadasimApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YolcuArkadasimApp.release.xcconfig"; path = "Target Support Files/Pods-YolcuArkadasimApp/Pods-YolcuArkadasimApp.release.xcconfig"; sourceTree = "<group>"; };
 		AAF8271006991FBA1F5EE2B6 /* Pods_YolcuArkadasimApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YolcuArkadasimApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEDD805A18FC4DF79063A770 /* Pods-YolcuArkadasimApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YolcuArkadasimApp.debug.xcconfig"; path = "Target Support Files/Pods-YolcuArkadasimApp/Pods-YolcuArkadasimApp.debug.xcconfig"; sourceTree = "<group>"; };
@@ -97,6 +103,9 @@
 				4A2ABEF827D261F900E3A9CE /* UserProfileViewController.swift */,
 				4A2ABEFA27D2622D00E3A9CE /* CreateTravelViewController.swift */,
 				4A0C4FAD27D7364F0069A326 /* TravelTableViewCell.swift */,
+				4A44F8CC27D7925000A73D1E /* SettingsTableViewCell.swift */,
+				4A44F8CE27D79C0000A73D1E /* AddNewTravelViewController.swift */,
+				4A44F8D027D7A47A00A73D1E /* LogoutViewController.swift */,
 			);
 			path = YolcuArkadasimApp;
 			sourceTree = "<group>";
@@ -226,12 +235,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A44F8CF27D79C0100A73D1E /* AddNewTravelViewController.swift in Sources */,
 				4A2ABEE327D210A200E3A9CE /* ViewController.swift in Sources */,
 				4A2ABEF927D261F900E3A9CE /* UserProfileViewController.swift in Sources */,
+				4A44F8CD27D7925000A73D1E /* SettingsTableViewCell.swift in Sources */,
 				4A0C4FAE27D7364F0069A326 /* TravelTableViewCell.swift in Sources */,
 				4A2ABEFB27D2622D00E3A9CE /* CreateTravelViewController.swift in Sources */,
 				4A2ABEDF27D210A200E3A9CE /* AppDelegate.swift in Sources */,
 				4A2ABEF727D261D600E3A9CE /* LastTravelViewController.swift in Sources */,
+				4A44F8D127D7A47A00A73D1E /* LogoutViewController.swift in Sources */,
 				4A2ABEE127D210A200E3A9CE /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
