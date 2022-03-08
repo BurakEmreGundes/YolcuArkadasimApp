@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2CBA9B537930C9E453B9C46C /* Pods_YolcuArkadasimApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAF8271006991FBA1F5EE2B6 /* Pods_YolcuArkadasimApp.framework */; };
+		4A0C4FAE27D7364F0069A326 /* TravelTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0C4FAD27D7364F0069A326 /* TravelTableViewCell.swift */; };
 		4A2ABEDF27D210A200E3A9CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2ABEDE27D210A200E3A9CE /* AppDelegate.swift */; };
 		4A2ABEE127D210A200E3A9CE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2ABEE027D210A200E3A9CE /* SceneDelegate.swift */; };
 		4A2ABEE327D210A200E3A9CE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2ABEE227D210A200E3A9CE /* ViewController.swift */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4A0C4FAD27D7364F0069A326 /* TravelTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelTableViewCell.swift; sourceTree = "<group>"; };
 		4A2ABEDB27D210A200E3A9CE /* YolcuArkadasimApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YolcuArkadasimApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A2ABEDE27D210A200E3A9CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4A2ABEE027D210A200E3A9CE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -94,6 +96,7 @@
 				4A2ABEF627D261D600E3A9CE /* LastTravelViewController.swift */,
 				4A2ABEF827D261F900E3A9CE /* UserProfileViewController.swift */,
 				4A2ABEFA27D2622D00E3A9CE /* CreateTravelViewController.swift */,
+				4A0C4FAD27D7364F0069A326 /* TravelTableViewCell.swift */,
 			);
 			path = YolcuArkadasimApp;
 			sourceTree = "<group>";
@@ -225,6 +228,7 @@
 			files = (
 				4A2ABEE327D210A200E3A9CE /* ViewController.swift in Sources */,
 				4A2ABEF927D261F900E3A9CE /* UserProfileViewController.swift in Sources */,
+				4A0C4FAE27D7364F0069A326 /* TravelTableViewCell.swift in Sources */,
 				4A2ABEFB27D2622D00E3A9CE /* CreateTravelViewController.swift in Sources */,
 				4A2ABEDF27D210A200E3A9CE /* AppDelegate.swift in Sources */,
 				4A2ABEF727D261D600E3A9CE /* LastTravelViewController.swift in Sources */,
