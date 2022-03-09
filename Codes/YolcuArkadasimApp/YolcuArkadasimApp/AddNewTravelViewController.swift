@@ -16,10 +16,12 @@ class AddNewTravelViewController: UIViewController,MKMapViewDelegate,CLLocationM
     @IBOutlet weak var carNameTextField: UITextField!
     @IBOutlet weak var fromTextField: UITextField!
     @IBOutlet weak var toTextField: UITextField!
+
     
     var chosenLatitude: Double!
     var chosenLongitude: Double!
     
+    var chosenAnnotations = [MKAnnotation]()
     var locationManager=CLLocationManager()
     
     @IBOutlet weak var mapView: MKMapView!
@@ -57,9 +59,12 @@ class AddNewTravelViewController: UIViewController,MKMapViewDelegate,CLLocationM
             let annotation = MKPointAnnotation()
             annotation.coordinate=touchedCoordinates
             
+            chosenAnnotations.append(annotation)
+            
             if titleTextField.text != "" && carNameTextField.text != "" && fromTextField.text != "" && toTextField.text != "" {
                 annotation.title=titleTextField.text
                 self.mapView.addAnnotation(annotation)
+               
             }
            
         }
@@ -86,7 +91,7 @@ class AddNewTravelViewController: UIViewController,MKMapViewDelegate,CLLocationM
             
             var fireStoreReferance: DocumentReference?=nil
             
-            let fireStorePost=["travelTitle":titleTextField.text!,"postedBy":Auth.auth().currentUser!.email!,"travelCar":carNameTextField.text!,"travelTo":toTextField.text!,"travelFrom":fromTextField.text!, "date":FieldValue.serverTimestamp(),"likes":0] as [String : Any]
+            let fireStorePost=["travelTitle":titleTextField.text!,"postedBy":Auth.auth().currentUser!.email!,"travelCar":carNameTextField.text!,"travelTo":toTextField.text!,"travelFrom":fromTextField.text!, "date":FieldValue.serverTimestamp(),"travelLatitude":chosenLatitude!,"travelLongitude":chosenLongitude!,"likes":0] as [String : Any]
             
             fireStoreReferance=fireStoreDatabase.collection("Travels").addDocument(data: fireStorePost,completion: { (error) in
                 if error != nil {
@@ -98,6 +103,7 @@ class AddNewTravelViewController: UIViewController,MKMapViewDelegate,CLLocationM
                     self.titleTextField.text=""
                     self.chosenLatitude=nil
                     self.chosenLongitude=nil
+                    self.mapView.removeAnnotations(self.chosenAnnotations)
                     self.tabBarController?.selectedIndex=0
                 }
             })

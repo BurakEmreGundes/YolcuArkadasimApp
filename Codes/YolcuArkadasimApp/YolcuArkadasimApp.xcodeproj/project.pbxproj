@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		2CBA9B537930C9E453B9C46C /* Pods_YolcuArkadasimApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAF8271006991FBA1F5EE2B6 /* Pods_YolcuArkadasimApp.framework */; };
 		4A0C4FAE27D7364F0069A326 /* TravelTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0C4FAD27D7364F0069A326 /* TravelTableViewCell.swift */; };
+		4A16A47327D8B9D800909337 /* Travel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A16A47227D8B9D800909337 /* Travel.swift */; };
+		4A16A47527D8D14A00909337 /* TravelDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A16A47427D8D14A00909337 /* TravelDetailViewController.swift */; };
 		4A2ABEDF27D210A200E3A9CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2ABEDE27D210A200E3A9CE /* AppDelegate.swift */; };
 		4A2ABEE127D210A200E3A9CE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2ABEE027D210A200E3A9CE /* SceneDelegate.swift */; };
 		4A2ABEE327D210A200E3A9CE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2ABEE227D210A200E3A9CE /* ViewController.swift */; };
@@ -27,6 +29,8 @@
 
 /* Begin PBXFileReference section */
 		4A0C4FAD27D7364F0069A326 /* TravelTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelTableViewCell.swift; sourceTree = "<group>"; };
+		4A16A47227D8B9D800909337 /* Travel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Travel.swift; sourceTree = "<group>"; };
+		4A16A47427D8D14A00909337 /* TravelDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelDetailViewController.swift; sourceTree = "<group>"; };
 		4A2ABEDB27D210A200E3A9CE /* YolcuArkadasimApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YolcuArkadasimApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A2ABEDE27D210A200E3A9CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4A2ABEE027D210A200E3A9CE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -106,6 +110,8 @@
 				4A44F8CC27D7925000A73D1E /* SettingsTableViewCell.swift */,
 				4A44F8CE27D79C0000A73D1E /* AddNewTravelViewController.swift */,
 				4A44F8D027D7A47A00A73D1E /* LogoutViewController.swift */,
+				4A16A47227D8B9D800909337 /* Travel.swift */,
+				4A16A47427D8D14A00909337 /* TravelDetailViewController.swift */,
 			);
 			path = YolcuArkadasimApp;
 			sourceTree = "<group>";
@@ -244,6 +250,8 @@
 				4A2ABEDF27D210A200E3A9CE /* AppDelegate.swift in Sources */,
 				4A2ABEF727D261D600E3A9CE /* LastTravelViewController.swift in Sources */,
 				4A44F8D127D7A47A00A73D1E /* LogoutViewController.swift in Sources */,
+				4A16A47327D8B9D800909337 /* Travel.swift in Sources */,
+				4A16A47527D8D14A00909337 /* TravelDetailViewController.swift in Sources */,
 				4A2ABEE127D210A200E3A9CE /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

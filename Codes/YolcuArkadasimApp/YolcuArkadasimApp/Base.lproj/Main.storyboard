@@ -268,76 +268,69 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="686"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="239" id="kbe-kS-bro" customClass="TravelTableViewCell" customModule="YolcuArkadasimApp" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="44.5" width="414" height="239"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="201" id="kbe-kS-bro" customClass="TravelTableViewCell" customModule="YolcuArkadasimApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="201"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="kbe-kS-bro" id="jqP-4S-rf8">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="239"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="201"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Konforlu araba yolculuğu" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LEE-T7-viI">
-                                                    <rect key="frame" x="20" y="26.5" width="374" height="55"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="374" id="9cO-Zj-bP6"/>
-                                                    </constraints>
-                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Araba = Renault" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fUl-0P-0qP">
-                                                    <rect key="frame" x="20" y="84.5" width="374" height="25"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="25" id="kHZ-ZN-gai"/>
-                                                    </constraints>
+                                                    <rect key="frame" x="20" y="64" width="374" height="25"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nereden = İzmir" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D7b-QY-sbm">
-                                                    <rect key="frame" x="20" y="117.5" width="374" height="21"/>
+                                                    <rect key="frame" x="20" y="97" width="374" height="21"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="21" id="YLd-U9-sJA"/>
+                                                        <constraint firstAttribute="height" constant="21" id="ugB-XY-6Ns"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nereye = Ankara" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="24z-Td-FgH">
-                                                    <rect key="frame" x="20" y="146.5" width="374" height="21"/>
+                                                    <rect key="frame" x="20" y="126" width="374" height="21"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="21" id="ygu-Ty-XfF"/>
+                                                        <constraint firstAttribute="height" constant="21" id="ZNw-mg-sGp"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wet-d4-SOn">
-                                                    <rect key="frame" x="119" y="175.5" width="177" height="51"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Konforlu araba yolculuğu" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LEE-T7-viI">
+                                                    <rect key="frame" x="20" y="35" width="374" height="20.5"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="51" id="3c1-kP-gCF"/>
+                                                        <constraint firstAttribute="width" constant="374" id="Xrb-3h-7hY"/>
+                                                        <constraint firstAttribute="height" constant="20.5" id="gGH-PZ-WKx"/>
                                                     </constraints>
-                                                    <state key="normal" title="Button"/>
-                                                    <buttonConfiguration key="configuration" style="plain" title="Detayları Gör"/>
-                                                </button>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="Wet-d4-SOn" firstAttribute="leading" secondItem="jqP-4S-rf8" secondAttribute="leadingMargin" constant="99" id="AAQ-Sk-deP"/>
-                                                <constraint firstItem="LEE-T7-viI" firstAttribute="top" secondItem="jqP-4S-rf8" secondAttribute="topMargin" constant="15.5" id="DGM-4h-9km"/>
-                                                <constraint firstItem="D7b-QY-sbm" firstAttribute="top" secondItem="fUl-0P-0qP" secondAttribute="bottom" constant="8" id="E3L-kE-2Zg"/>
-                                                <constraint firstItem="24z-Td-FgH" firstAttribute="centerX" secondItem="Wet-d4-SOn" secondAttribute="centerX" id="Niq-7G-TBk"/>
-                                                <constraint firstItem="LEE-T7-viI" firstAttribute="trailing" secondItem="fUl-0P-0qP" secondAttribute="trailing" id="Znr-gs-01s"/>
-                                                <constraint firstItem="LEE-T7-viI" firstAttribute="leading" secondItem="fUl-0P-0qP" secondAttribute="leading" id="a96-Sj-E4t"/>
-                                                <constraint firstItem="LEE-T7-viI" firstAttribute="leading" secondItem="jqP-4S-rf8" secondAttribute="leadingMargin" id="adE-5V-bfl"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="Wet-d4-SOn" secondAttribute="bottom" constant="1.5" id="aqA-r0-RP2"/>
-                                                <constraint firstItem="Wet-d4-SOn" firstAttribute="top" secondItem="24z-Td-FgH" secondAttribute="bottom" constant="8" id="hVs-KT-Vly"/>
-                                                <constraint firstItem="24z-Td-FgH" firstAttribute="top" secondItem="D7b-QY-sbm" secondAttribute="bottom" constant="8" id="ihs-j3-dej"/>
-                                                <constraint firstItem="fUl-0P-0qP" firstAttribute="top" secondItem="LEE-T7-viI" secondAttribute="bottom" constant="3" id="q0W-1N-ftO"/>
-                                                <constraint firstItem="fUl-0P-0qP" firstAttribute="leading" secondItem="D7b-QY-sbm" secondAttribute="leading" id="rsj-fJ-czG"/>
-                                                <constraint firstItem="fUl-0P-0qP" firstAttribute="trailing" secondItem="D7b-QY-sbm" secondAttribute="trailing" id="wK8-6A-41r"/>
-                                                <constraint firstItem="D7b-QY-sbm" firstAttribute="trailing" secondItem="24z-Td-FgH" secondAttribute="trailing" id="x66-7r-UtC"/>
-                                                <constraint firstItem="D7b-QY-sbm" firstAttribute="leading" secondItem="24z-Td-FgH" secondAttribute="leading" id="yK9-zp-Om0"/>
+                                                <constraint firstItem="fUl-0P-0qP" firstAttribute="leading" secondItem="D7b-QY-sbm" secondAttribute="leading" id="3OJ-yP-hwR"/>
+                                                <constraint firstItem="D7b-QY-sbm" firstAttribute="leading" secondItem="24z-Td-FgH" secondAttribute="leading" id="BJw-VT-lej"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="24z-Td-FgH" secondAttribute="bottom" constant="43" id="Kx4-ma-Uw4"/>
+                                                <constraint firstItem="LEE-T7-viI" firstAttribute="leading" secondItem="fUl-0P-0qP" secondAttribute="leading" id="RCx-dg-4uW"/>
+                                                <constraint firstItem="D7b-QY-sbm" firstAttribute="trailing" secondItem="24z-Td-FgH" secondAttribute="trailing" id="Swp-gd-Yn5"/>
+                                                <constraint firstItem="LEE-T7-viI" firstAttribute="trailing" secondItem="fUl-0P-0qP" secondAttribute="trailing" id="cyX-WD-w5h"/>
+                                                <constraint firstItem="LEE-T7-viI" firstAttribute="top" secondItem="jqP-4S-rf8" secondAttribute="topMargin" constant="24" id="fD4-Xk-mjr"/>
+                                                <constraint firstItem="fUl-0P-0qP" firstAttribute="trailing" secondItem="D7b-QY-sbm" secondAttribute="trailing" id="fS6-Au-dLC"/>
+                                                <constraint firstItem="24z-Td-FgH" firstAttribute="top" secondItem="D7b-QY-sbm" secondAttribute="bottom" constant="8" id="gnm-HH-c14"/>
+                                                <constraint firstItem="LEE-T7-viI" firstAttribute="leading" secondItem="jqP-4S-rf8" secondAttribute="leadingMargin" id="hmn-vX-gbA"/>
+                                                <constraint firstItem="fUl-0P-0qP" firstAttribute="top" secondItem="LEE-T7-viI" secondAttribute="bottom" constant="8.5" id="q1I-Xb-JBj"/>
+                                                <constraint firstItem="D7b-QY-sbm" firstAttribute="top" secondItem="fUl-0P-0qP" secondAttribute="bottom" constant="8" id="sZt-6j-3MP"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="travelCarLabel" destination="fUl-0P-0qP" id="hqO-L7-YW0"/>
+                                            <outlet property="travelFromLabel" destination="D7b-QY-sbm" id="wIu-Ki-22M"/>
+                                            <outlet property="travelTitleLabel" destination="LEE-T7-viI" id="fl5-Rq-Rzq"/>
+                                            <outlet property="travelToLabel" destination="24z-Td-FgH" id="afh-2c-qII"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -345,13 +338,13 @@
                         <viewLayoutGuide key="safeArea" id="7So-cH-fgW"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="lhj-ir-Afa" firstAttribute="top" secondItem="K9K-Kr-OBL" secondAttribute="bottom" id="BOO-sM-2w5"/>
-                            <constraint firstItem="K9K-Kr-OBL" firstAttribute="top" secondItem="7So-cH-fgW" secondAttribute="top" id="BQy-ik-pd8"/>
-                            <constraint firstItem="K9K-Kr-OBL" firstAttribute="leading" secondItem="7So-cH-fgW" secondAttribute="leading" id="NTK-uk-xbj"/>
-                            <constraint firstItem="7So-cH-fgW" firstAttribute="bottom" secondItem="lhj-ir-Afa" secondAttribute="bottom" constant="39" id="PjU-Qx-lji"/>
-                            <constraint firstItem="K9K-Kr-OBL" firstAttribute="centerX" secondItem="JoJ-xK-7hP" secondAttribute="centerX" id="eYU-8H-p6p"/>
-                            <constraint firstItem="K9K-Kr-OBL" firstAttribute="leading" secondItem="lhj-ir-Afa" secondAttribute="leading" id="jlf-Ex-XUp"/>
-                            <constraint firstItem="K9K-Kr-OBL" firstAttribute="trailing" secondItem="lhj-ir-Afa" secondAttribute="trailing" id="yQP-Fk-LmA"/>
+                            <constraint firstItem="K9K-Kr-OBL" firstAttribute="trailing" secondItem="lhj-ir-Afa" secondAttribute="trailing" id="9R6-uV-x3q"/>
+                            <constraint firstItem="K9K-Kr-OBL" firstAttribute="centerX" secondItem="JoJ-xK-7hP" secondAttribute="centerX" id="JXO-cg-AAJ"/>
+                            <constraint firstItem="K9K-Kr-OBL" firstAttribute="top" secondItem="7So-cH-fgW" secondAttribute="top" id="NQ3-30-0mD"/>
+                            <constraint firstItem="7So-cH-fgW" firstAttribute="bottom" secondItem="lhj-ir-Afa" secondAttribute="bottom" constant="39" id="Slq-nN-F5H"/>
+                            <constraint firstItem="K9K-Kr-OBL" firstAttribute="leading" secondItem="7So-cH-fgW" secondAttribute="leading" id="UDm-Kb-G89"/>
+                            <constraint firstItem="lhj-ir-Afa" firstAttribute="top" secondItem="K9K-Kr-OBL" secondAttribute="bottom" id="ws0-ei-jat"/>
+                            <constraint firstItem="K9K-Kr-OBL" firstAttribute="leading" secondItem="lhj-ir-Afa" secondAttribute="leading" id="zVC-4f-wxG"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="homekit" catalog="system" id="24l-8i-BcH"/>
