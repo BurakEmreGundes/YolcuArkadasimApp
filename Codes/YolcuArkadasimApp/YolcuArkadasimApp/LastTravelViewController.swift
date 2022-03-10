@@ -11,9 +11,10 @@ import FirebaseFirestore
 class LastTravelViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
    
 
+    
     @IBOutlet weak var tableView: UITableView!
     var travels=[Travel]()
-    @IBOutlet weak var travelIDForDetails: UILabel!
+    var documentIDForTravelDetails:String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -50,7 +51,15 @@ class LastTravelViewController: UIViewController,UITableViewDelegate,UITableView
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        documentIDForTravelDetails=travels[indexPath.row].travelID
         self.performSegue(withIdentifier: "toTravelDetailVC", sender: nil)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "toTravelDetailVC"{
+            let destination=segue.destination as! TravelDetailViewController
+            destination.documentIDForTravel=documentIDForTravelDetails
+        }
     }
     
     func getDataFromFirestore(){
@@ -106,14 +115,5 @@ class LastTravelViewController: UIViewController,UITableViewDelegate,UITableView
     
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

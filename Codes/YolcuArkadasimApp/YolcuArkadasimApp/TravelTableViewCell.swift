@@ -13,6 +13,7 @@ class TravelTableViewCell: UITableViewCell {
     @IBOutlet weak var travelCarLabel: UILabel!
     @IBOutlet weak var travelFromLabel: UILabel!
     @IBOutlet weak var travelToLabel: UILabel!
+    @IBOutlet weak var documentIDForTravel: UILabel!
     
     
     
@@ -27,8 +28,6 @@ class TravelTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-    @IBAction func seeDetailsClicked(_ sender: Any) {
-        print("Detaylar Gösterilecek")
-    }
+
     
 }
