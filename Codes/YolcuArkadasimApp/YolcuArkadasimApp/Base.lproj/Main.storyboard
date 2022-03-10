@@ -256,14 +256,88 @@
                     <view key="view" contentMode="scaleToFill" id="feC-UR-nHj">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="90G-xP-9ze">
+                                <rect key="frame" x="0.0" y="394" width="414" height="337"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="337" id="JJz-Ld-5it"/>
+                                </constraints>
+                            </mapView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Kullanıcı = burakemre.begn@gmail.com" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kjf-KY-EdI">
+                                <rect key="frame" x="39" y="56" width="337" height="51"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="51" id="1fK-3P-ovv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Nereden = Ankara" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q6p-ro-edR">
+                                <rect key="frame" x="39" y="115" width="337" height="51"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="51" id="7F7-9Z-0El"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Nereye = İstanbul" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fXF-xg-S24">
+                                <rect key="frame" x="39" y="174" width="337" height="51"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="51" id="Stm-h1-hZv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Araç = Mercedes Vito" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jzf-3e-HZH">
+                                <rect key="frame" x="39" y="233" width="337" height="51"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="51" id="uqh-CX-Zfz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PUq-ZC-viA">
+                                <rect key="frame" x="152" y="292" width="111" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Yola Çık"/>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="8IS-UM-66I"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="fXF-xg-S24" firstAttribute="top" secondItem="Q6p-ro-edR" secondAttribute="bottom" constant="8" id="2FO-Sq-WAi"/>
+                            <constraint firstItem="Q6p-ro-edR" firstAttribute="trailing" secondItem="fXF-xg-S24" secondAttribute="trailing" id="3Ox-5P-wxI"/>
+                            <constraint firstItem="Jzf-3e-HZH" firstAttribute="top" secondItem="fXF-xg-S24" secondAttribute="bottom" constant="8" id="CX0-yx-T53"/>
+                            <constraint firstItem="kjf-KY-EdI" firstAttribute="centerX" secondItem="feC-UR-nHj" secondAttribute="centerX" id="E6Y-wM-KIJ"/>
+                            <constraint firstItem="kjf-KY-EdI" firstAttribute="leading" secondItem="Q6p-ro-edR" secondAttribute="leading" id="EbM-Fe-BPn"/>
+                            <constraint firstItem="Q6p-ro-edR" firstAttribute="leading" secondItem="fXF-xg-S24" secondAttribute="leading" id="PDn-xB-cOc"/>
+                            <constraint firstItem="kjf-KY-EdI" firstAttribute="trailing" secondItem="Q6p-ro-edR" secondAttribute="trailing" id="Sns-Ud-hMa"/>
+                            <constraint firstItem="Q6p-ro-edR" firstAttribute="top" secondItem="kjf-KY-EdI" secondAttribute="bottom" constant="8" id="Txv-Ew-J12"/>
+                            <constraint firstItem="90G-xP-9ze" firstAttribute="leading" secondItem="8IS-UM-66I" secondAttribute="leading" id="X81-NQ-ruu"/>
+                            <constraint firstItem="Jzf-3e-HZH" firstAttribute="centerX" secondItem="90G-xP-9ze" secondAttribute="centerX" id="kVB-7C-QZn"/>
+                            <constraint firstItem="kjf-KY-EdI" firstAttribute="top" secondItem="8IS-UM-66I" secondAttribute="top" constant="56" id="mbu-qP-NEa"/>
+                            <constraint firstItem="kjf-KY-EdI" firstAttribute="leading" secondItem="8IS-UM-66I" secondAttribute="leading" constant="39" id="o2v-Dq-oRj"/>
+                            <constraint firstItem="fXF-xg-S24" firstAttribute="trailing" secondItem="Jzf-3e-HZH" secondAttribute="trailing" id="rVz-bh-TK2"/>
+                            <constraint firstItem="8IS-UM-66I" firstAttribute="bottom" secondItem="90G-xP-9ze" secondAttribute="bottom" constant="77" id="rls-V7-tBf"/>
+                            <constraint firstItem="fXF-xg-S24" firstAttribute="leading" secondItem="Jzf-3e-HZH" secondAttribute="leading" id="tJx-gA-DLz"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="fkv-31-3B9"/>
+                    <connections>
+                        <outlet property="UserEmailLabel" destination="kjf-KY-EdI" id="pOJ-L6-lxd"/>
+                        <outlet property="carLabel" destination="Jzf-3e-HZH" id="1PM-IQ-u5c"/>
+                        <outlet property="mapView" destination="90G-xP-9ze" id="dXh-s4-gfK"/>
+                        <outlet property="travelFromLavel" destination="Q6p-ro-edR" id="8Fp-Wc-Ph2"/>
+                        <outlet property="travelToLabel" destination="fXF-xg-S24" id="7ga-ku-bgf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BOf-9o-7yd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2951" y="-244"/>
+            <point key="canvasLocation" x="2950.7246376811595" y="-244.41964285714283"/>
         </scene>
         <!--Last Travel View Controller-->
         <scene sceneID="5UI-WE-KM0">
